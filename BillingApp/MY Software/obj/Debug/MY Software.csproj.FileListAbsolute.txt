@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\bin\Debug\MY Software.exe.config
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\bin\Debug\MY Software.exe
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\bin\Debug\MY Software.pdb
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY Software.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY Software.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY Software.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY Software.exe
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY Software.pdb
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.Form1.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.DashBoards.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.couple.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.DetailsForm.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.Registration.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\MY Software\obj\Debug\MY_Software.Reference.resources

@@ -1,0 +1,6 @@
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.Form1.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\BillingApp\obj\Debug\net8.0-windows\BillingApp.csproj.CoreCompileInputs.cache
