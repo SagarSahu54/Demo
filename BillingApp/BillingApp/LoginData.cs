@@ -36,7 +36,7 @@ namespace BillingApp
                 COM.Open();
                 SqlCommand cmd = new SqlCommand("SP_Login_details", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Action","SelectAll");
+                cmd.Parameters.AddWithValue("@Action","SelectAllData");
                 /**SqlCommand cmd = new SqlCommand("Select * From Client_Details", COM);*/
                 DataTable Dt = new DataTable();
                 Dt.Load(cmd.ExecuteReader());
@@ -126,6 +126,7 @@ namespace BillingApp
                     cmd.Parameters.AddWithValue("@Pass", tex_Password.Text);
                     cmd.ExecuteNonQuery();
                     COM.Close();
+                    loginDetails();
 
                     MessageBox.Show("Data Update Successfully");
                     //  update();
@@ -145,7 +146,14 @@ namespace BillingApp
         }
         private void loginDetails()
         {
-
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Login_details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "SelectAllData");
+            DataTable Dt = new DataTable();
+            Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+            metroGrid1.DataSource = Dt;
         }
 
         public void clear()
@@ -181,6 +189,17 @@ namespace BillingApp
         private void btn_Delete_Click(object sender, EventArgs e)
         {
 
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Login_details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "Delete");
+            DataTable Dt = new DataTable();
+            Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+            metroGrid1.DataSource = Dt;
+
+
+            MessageBox.Show("Data Delete Successfully");
         }
     }
 }

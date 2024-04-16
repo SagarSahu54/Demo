@@ -49,8 +49,10 @@
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btn_Delete = new MetroFramework.Controls.MetroButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Mlab_Login
@@ -60,7 +62,7 @@
             this.Mlab_Login.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Mlab_Login.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.Mlab_Login.ForeColor = System.Drawing.Color.Blue;
-            this.Mlab_Login.Location = new System.Drawing.Point(340, 31);
+            this.Mlab_Login.Location = new System.Drawing.Point(367, 0);
             this.Mlab_Login.Name = "Mlab_Login";
             this.Mlab_Login.Size = new System.Drawing.Size(97, 25);
             this.Mlab_Login.TabIndex = 0;
@@ -106,7 +108,7 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(74, 206);
+            this.metroGrid1.Location = new System.Drawing.Point(52, 210);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.ReadOnly = true;
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -231,7 +233,6 @@
             this.tex_User_ID.Name = "tex_User_ID";
             this.tex_User_ID.Size = new System.Drawing.Size(185, 20);
             this.tex_User_ID.TabIndex = 8;
-            this.tex_User_ID.Visible = false;
             // 
             // tex_Password
             // 
@@ -283,7 +284,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(44, 78);
+            this.metroPanel1.Location = new System.Drawing.Point(12, 86);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(744, 99);
             this.metroPanel1.TabIndex = 13;
@@ -307,23 +308,33 @@
             this.btn_Delete.UseSelectable = true;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Fuchsia;
+            this.panel1.Controls.Add(this.Mlab_Login);
+            this.panel1.Location = new System.Drawing.Point(1, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(833, 31);
+            this.panel1.TabIndex = 14;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.Mlab_Login);
             this.Name = "login";
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -347,5 +358,6 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroButton btn_Delete;
+        private System.Windows.Forms.Panel panel1;
     }
 }

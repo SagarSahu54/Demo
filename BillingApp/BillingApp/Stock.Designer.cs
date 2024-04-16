@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MBtn_StockPrint = new MetroFramework.Controls.MetroButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MBtn_StockPrint = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,24 +45,13 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(593, 14);
+            this.dataGridView1.Location = new System.Drawing.Point(360, 14);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(337, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(351, 426);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // MBtn_StockPrint
-            // 
-            this.MBtn_StockPrint.BackColor = System.Drawing.Color.Cyan;
-            this.MBtn_StockPrint.Location = new System.Drawing.Point(176, 103);
-            this.MBtn_StockPrint.Name = "MBtn_StockPrint";
-            this.MBtn_StockPrint.Size = new System.Drawing.Size(143, 37);
-            this.MBtn_StockPrint.TabIndex = 1;
-            this.MBtn_StockPrint.Text = "Stock Print";
-            this.MBtn_StockPrint.UseSelectable = true;
-            this.MBtn_StockPrint.Click += new System.EventHandler(this.MBtn_StockPrint_Click);
             // 
             // Column1
             // 
@@ -85,11 +74,22 @@
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
+            // MBtn_StockPrint
+            // 
+            this.MBtn_StockPrint.BackColor = System.Drawing.Color.Cyan;
+            this.MBtn_StockPrint.Location = new System.Drawing.Point(568, 448);
+            this.MBtn_StockPrint.Name = "MBtn_StockPrint";
+            this.MBtn_StockPrint.Size = new System.Drawing.Size(143, 37);
+            this.MBtn_StockPrint.TabIndex = 1;
+            this.MBtn_StockPrint.Text = "Stock Print";
+            this.MBtn_StockPrint.UseSelectable = true;
+            this.MBtn_StockPrint.Click += new System.EventHandler(this.MBtn_StockPrint_Click);
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1333, 692);
             this.Controls.Add(this.MBtn_StockPrint);
             this.Controls.Add(this.dataGridView1);

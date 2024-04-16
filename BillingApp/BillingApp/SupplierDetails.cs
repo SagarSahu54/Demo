@@ -60,48 +60,53 @@ namespace BillingApp
             {
                 if (btn_Submit.Text == "Submit")
                 {
-                    int Result = 0;
-                    COM.Open();
-                    SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Action", "Insert");
-                    cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
-                    cmd.Parameters.AddWithValue("@Email", text_Email.Text);
-                    cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
-                    cmd.Parameters.AddWithValue("@Address", text_Address.Text);
-                    cmd.Parameters.AddWithValue("@Pancard",tex_Pancard.Text);
-                    Result = cmd.ExecuteNonQuery();
-                    COM.Close();
-
-                    if (Result == 1)
-                    {
-                        MessageBox.Show("Supplier Details Successfully", "Invoice");
-                    }
-                    SupplierDetails1();
-                    //   MessageBox.Show("Data Insert Successfully");
+                    findContact();
+                   //int Result = 0;
+                   //COM.Open();
+                   //SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
+                   //cmd.CommandType = CommandType.StoredProcedure;
+                   //cmd.Parameters.AddWithValue("@Action", "Insert");
+                   //cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
+                   //cmd.Parameters.AddWithValue("@Email", text_Email.Text);
+                   //cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+                   //cmd.Parameters.AddWithValue("@Address", text_Address.Text);
+                   //cmd.Parameters.AddWithValue("@Pancard", tex_Pancard.Text);
+                   //Result = cmd.ExecuteNonQuery();
+                   //COM.Close();
+                   //
+                   //if (Result == 1)
+                   //{
+                   //    MessageBox.Show("Supplier Details Successfully", "Invoice");
+                   //}
+                   //SupplierDetails1();
+                   // //   MessageBox.Show("Data Insert Successfully");
                 }
 
                 if (btn_Submit.Text == "Update")
                 {
-                    COM.Open();
-                    SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Action", "Update");
-                    cmd.Parameters.AddWithValue("@Supplier_ID", text_ID.Text);
-                    cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
-                    cmd.Parameters.AddWithValue("@Email", text_Email.Text);
-                    cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
-                    cmd.Parameters.AddWithValue("@Address", text_Address.Text);
-                    cmd.Parameters.AddWithValue("@Pancard", tex_Pancard.Text);
-                    cmd.ExecuteNonQuery();
-                    COM.Close();
-
-                    MessageBox.Show("Data Update Successfully");
-                    //  update();
+                    Update1();
                 }
-                clear();
-                btn_Submit.Text = "Submit";
             }
+            /*{
+                COM.Open();
+                SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "Update");
+                cmd.Parameters.AddWithValue("@Supplier_ID", text_ID.Text);
+                cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
+                cmd.Parameters.AddWithValue("@Email", text_Email.Text);
+                cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+                cmd.Parameters.AddWithValue("@Address", text_Address.Text);
+                cmd.Parameters.AddWithValue("@Pancard", tex_Pancard.Text);
+                cmd.ExecuteNonQuery();
+                COM.Close();
+
+                MessageBox.Show("Data Update Successfully");
+                //  update();
+            }
+            clear();
+            btn_Submit.Text = "Submit";
+        }*/
             catch (Exception ex)
             {
                 MessageBox.Show("Something Event Wrong", "Error");
@@ -110,6 +115,71 @@ namespace BillingApp
             {
 
                 COM.Close();
+            }
+        }
+        public void Submit()
+        {
+            int Result = 0;
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "Insert");
+            cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
+            cmd.Parameters.AddWithValue("@Email", text_Email.Text);
+            cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+            cmd.Parameters.AddWithValue("@Address", text_Address.Text);
+            cmd.Parameters.AddWithValue("@Pancard", tex_Pancard.Text);
+            Result = cmd.ExecuteNonQuery();
+            COM.Close();
+
+            if (Result == 1)
+            {
+                MessageBox.Show("Supplier Details Successfully", "Invoice");
+            }
+            SupplierDetails1();
+        }
+        public void Update1()
+        {
+            {
+                COM.Open();
+                SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "Update");
+                cmd.Parameters.AddWithValue("@Supplier_ID", text_ID.Text);
+                cmd.Parameters.AddWithValue("@Supplier_Name", text_Name.Text);
+                cmd.Parameters.AddWithValue("@Email", text_Email.Text);
+                cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+                cmd.Parameters.AddWithValue("@Address", text_Address.Text);
+                cmd.Parameters.AddWithValue("@Pancard", tex_Pancard.Text);
+                cmd.ExecuteNonQuery();
+                COM.Close();
+
+                MessageBox.Show("Data Update Successfully");
+                //  update();
+            }
+            clear();
+            btn_Submit.Text = "Submit";
+        }
+        public void findContact()
+        {
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Supplier_Details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "FindContact");
+            cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+            DataTable Dt = new DataTable();
+            Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+            // Datadetail= Dt.ToString();
+            int DTCount = Dt.Rows.Count;
+            if (DTCount > 0)
+            {
+                MessageBox.Show(" Contact Details Already Exist ", "Show");
+            }
+            else
+            {
+                MessageBox.Show("That is New Data", "Show");
+                Submit();
             }
         }
 

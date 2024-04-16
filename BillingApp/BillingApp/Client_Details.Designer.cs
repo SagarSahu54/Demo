@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lab_Name = new System.Windows.Forms.Label();
             this.lab_Address = new System.Windows.Forms.Label();
             this.lab_Email = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.tex_clientPrint = new System.Windows.Forms.Button();
             this.btn_Excel = new System.Windows.Forms.Button();
             this.time = new System.Windows.Forms.Label();
             this.Text_Time = new System.Windows.Forms.TextBox();
@@ -60,11 +62,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Tex_Search = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.tex_clientPrint = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lab_Name
@@ -310,6 +313,7 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
             // 
             // metroPanel2
             // 
@@ -361,6 +365,16 @@
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
             this.metroPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel3_Paint);
+            // 
+            // tex_clientPrint
+            // 
+            this.tex_clientPrint.Location = new System.Drawing.Point(730, 238);
+            this.tex_clientPrint.Name = "tex_clientPrint";
+            this.tex_clientPrint.Size = new System.Drawing.Size(111, 33);
+            this.tex_clientPrint.TabIndex = 19;
+            this.tex_clientPrint.Text = "Client_Print";
+            this.tex_clientPrint.UseVisualStyleBackColor = true;
+            this.tex_clientPrint.Click += new System.EventHandler(this.tex_clientPrint_Click);
             // 
             // btn_Excel
             // 
@@ -436,15 +450,9 @@
             this.Tex_Search.UseWaitCursor = true;
             this.Tex_Search.TextChanged += new System.EventHandler(this.Tex_Search_TextChanged);
             // 
-            // tex_clientPrint
+            // errorProvider1
             // 
-            this.tex_clientPrint.Location = new System.Drawing.Point(730, 238);
-            this.tex_clientPrint.Name = "tex_clientPrint";
-            this.tex_clientPrint.Size = new System.Drawing.Size(111, 33);
-            this.tex_clientPrint.TabIndex = 19;
-            this.tex_clientPrint.Text = "Client_Print";
-            this.tex_clientPrint.UseVisualStyleBackColor = true;
-            this.tex_clientPrint.Click += new System.EventHandler(this.tex_clientPrint_Click);
+            this.errorProvider1.ContainerControl = this;
             // 
             // Client_Details
             // 
@@ -463,6 +471,7 @@
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -502,5 +511,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button tex_clientPrint;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

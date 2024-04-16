@@ -30,10 +30,10 @@ namespace BillingApp
 
                 MTex_InvoiceDate.Text = DateTime.Now.ToString("dd MM yyyy");
 
-              //  metroTextBox1.Text = Client_Details.clientid;
-              //  metroTextBox2.Text = Client_Details.Email;
-              //  metroTextBox3.Text = Client_Details.Contact;
-              //  richTextBox2.Text = Client_Details.Address;
+               metroTextBox1.Text = Client_Details.clientid;
+               metroTextBox2.Text = Client_Details.Email;
+              metroTextBox3.Text = Client_Details.Contact;
+              richTextBox2.Text = Client_Details.Address;
             } 
             catch(Exception ex)
             {
@@ -169,7 +169,8 @@ namespace BillingApp
             }
 
             //COM.Open();
-            //SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            //SqlCom55
+            //mand cmd = new SqlCommand("SP_Product_Details", COM);
             //cmd.CommandType = CommandType.StoredProcedure;
 
 
@@ -211,40 +212,117 @@ namespace BillingApp
 
 
         }
+        int MyRowIndex;
+        string r;
 
         private void MBtn_AddItem_Click(object sender, EventArgs e)
         {
+            // int i = e.RowIndex;
+
+            // for (i = 0; i <) ;
+            ///     string tr = Convert.ToString(metroGrid1.Rows[MyRowIndex].Cells[1].Value);
+            //metroGrid1.Rows.Count;
+            //int MyRowIndex = metroGrid1.RowCount;
+            // for(int i=0; i<=MyRowIndex; i++)nd
+          //  metroGrid1.Rows[MyRowIndex].Cells[1].Value = MCom_ProductName.text;
+            int Rowcount = metroGrid1.Rows.Count;
+           string s = MCom_ProductName.Text;
+            if (Rowcount > 0)
+            {
+
+                for (int i = 0; i < Rowcount; i++)
+                {
+
+                    if (metroGrid1.Rows[i].Cells[1].Value.ToString()== MCom_ProductName.Text)
+                    {
+
+                        MessageBox.Show("Products  Already Exist ", "Show");
+                        return;
+
+                        //findproduct();
+
+                    }
+                }
+
+            }
+           findproduct();
+
+            // for (int i = 0; i <Convert.ToInt32( Rowcount); i++)
+            //
+            // if(MCom_ProductName.Text== Rowcount)
+            // {
+            //     MessageBox.Show("Products  Already Exist ", "Show");
+            // }
+            // else
+            // {
+            //     MessageBox.Show("New Product Enter", "Show");
+            //     submit();
+            // }
+            //
+            //
+
+            // r =Convert.ToString( metroGrid1.Rows[MyRowIndex].Cells[1].Value);
+
+            //  MCom_ProductName.Text = metroGrid1.Rows[MyRowIndex].Cells[1].Value.ToString();
+            // findproduct();
+
+        } 
+        public void selectAll()
+        {
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "SelectAll");
+            /**SqlCommand cmd = new SqlCommand("Select * From Client_Details", COM);*/
+            DataTable Dt = new DataTable();
+            Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+        }
+        public void submit()
+        {
+            MTex_Total.Text = ((Convert.ToInt32(MTex_Price.Text)) * (Convert.ToInt32(MTex_Quantity.Text))).ToString();
+            {
+                metroGrid1.Rows.Add(MTex_ProductID.Text, MCom_ProductName.Text, MTex_Price.Text, MTex_Quantity.Text, MTex_Total.Text);
+
+            }
+            clear_Data();
+
+            double total = 0;
+            for (int i = 0; i <= metroGrid1.Rows.Count - 1; i++)
+            {
+
+                total = total + Convert.ToDouble(metroGrid1.Rows[i].Cells[4].Value.ToString());
+
+
+            }
+            MTex_GrandTotal.Text = total.ToString();
+        }
+        public void findproduct()
+        {
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "findProducts");
+            cmd.Parameters.AddWithValue("@Product_Name", MCom_ProductName);
+            DataTable Dt = new DataTable();
            
-            try
+             // Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+            // Datadetail= Dt.ToString();
+            int DTCount = Dt.Rows.Count;
+            if (DTCount > 0)
             {
-
-                MTex_Total.Text = ((Convert.ToInt32(MTex_Price.Text)) * (Convert.ToInt32(MTex_Quantity.Text))).ToString();
-                {
-                    metroGrid1.Rows.Add(MTex_ProductID.Text, MCom_ProductName.Text, MTex_Price.Text, MTex_Quantity.Text, MTex_Total.Text);
-
-                }
-                clear_Data();
+                MessageBox.Show("Products  Already Exist ", "Show");
                 
-                double  total=0;
-                for (int i=0; i <= metroGrid1.Rows.Count -1; i++)
-                {
-                 
-                    total =total+ Convert.ToDouble(metroGrid1.Rows[i].Cells[4].Value.ToString());
-              
-
-                }
-                MTex_GrandTotal.Text = total.ToString();
-
             }
-            catch (Exception ex)
+            else
             {
-
-            }
-            finally
-            {
-                COM.Close();
+                MessageBox.Show("New Product Enter", "Show");
+               submit();
+                
             }
         }
+
         public void clear_Data()
         {
             try

@@ -85,6 +85,9 @@ namespace BillingApp
 
             if (btn_Submit.Text == "Submit")
             {
+                findname();
+            }
+            /*{
                 COM.Open();
                 SqlCommand cmd = new SqlCommand("SP_Product_Details",COM);
                 cmd.CommandType=CommandType.StoredProcedure;
@@ -100,12 +103,15 @@ namespace BillingApp
 
                 MessageBox.Show("Data Insert Successfully");
             }
-            Refresh();
+            Refresh();*/
 
 
 
             if (btn_Submit.Text == "Update")
-            { 
+            {
+                update();
+            }
+           /* { 
                 COM.Open();
                 SqlCommand cmd = new SqlCommand("SP_Product_Details",COM);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -121,7 +127,7 @@ namespace BillingApp
                 MessageBox.Show("Data Update Successfully");
             }
             clear();
-            btn_Submit.Text = "Submit";
+            btn_Submit.Text = "Submit";*/
         }
         public void clear()
         {
@@ -142,6 +148,71 @@ namespace BillingApp
                 COM.Close();
             }
         }
+        public void Submit()
+        {
+            {
+                COM.Open();
+                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@Action", "Insert");
+                cmd.Parameters.AddWithValue("@Product_ID", text_ID.Text);
+                cmd.Parameters.AddWithValue("@Product_Name", text_Name.Text);
+                cmd.Parameters.AddWithValue("@MRP", Convert.ToInt32(text_MRP.Text));
+                cmd.Parameters.AddWithValue("@SellingPrice", Convert.ToInt32(text_Selling.Text));
+                cmd.Parameters.AddWithValue("@Stock", Convert.ToInt32(text_Quantity.Text));
+                cmd.ExecuteNonQuery();
+                COM.Close();
+
+                MessageBox.Show("Data Insert Successfully");
+            }
+            Refresh();
+        }
+        public void Update()
+        {
+            {
+                COM.Open();
+                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "Update");
+                cmd.Parameters.AddWithValue("@Product_ID", text_ID.Text);
+                cmd.Parameters.AddWithValue("@Product_Name", text_Name.Text);
+                cmd.Parameters.AddWithValue("@MRP", Convert.ToInt32(text_MRP.Text));
+                cmd.Parameters.AddWithValue("@SellingPrice", Convert.ToInt32(text_Selling.Text));
+                cmd.Parameters.AddWithValue("@Stock", Convert.ToInt32(text_Quantity.Text));
+                cmd.ExecuteNonQuery();
+                COM.Close();
+                ProductDetailsRefressh();
+                MessageBox.Show("Data Update Successfully");
+            }
+            clear();
+            btn_Submit.Text = "Submit";
+
+        }
+        public void findname()
+        {
+            COM.Open();
+            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Action", "findProducts");
+            cmd.Parameters.AddWithValue("@Product_Name", text_Name.Text);
+            DataTable Dt = new DataTable();
+            Dt.Load(cmd.ExecuteReader());
+            COM.Close();
+            // Datadetail= Dt.ToString();
+            int DTCount = Dt.Rows.Count;
+            if (DTCount > 0)
+            {
+                MessageBox.Show("Products  Already Exist ", "Show");
+            }
+            else
+            {
+                MessageBox.Show("New Product Enter", "Show");
+                Submit();
+
+            }
+        }
+    
        
         
         public void Refresh()

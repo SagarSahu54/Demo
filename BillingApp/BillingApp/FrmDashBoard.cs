@@ -90,7 +90,7 @@ namespace BillingApp
         private void metroButton1_Click_1(object sender, EventArgs e)
         {
             loginForm LOG = new loginForm();
-            LOG.Show();
+            LOG.ShowDialog();
         }
 
        
@@ -113,7 +113,7 @@ namespace BillingApp
         private void MBtn_Stock_Click(object sender, EventArgs e)
         {
             Stock stk = new Stock();
-            stk.Show();
+            stk.ShowDialog();
         }
 
 
@@ -121,20 +121,20 @@ namespace BillingApp
         private void metroButton3_Click(object sender, EventArgs e)
         {
             InvoiceMaster InvoM = new InvoiceMaster();
-            InvoM.Show();
+            InvoM.ShowDialog();
         }
 
        
         private void MBtn_Supplier_Click(object sender, EventArgs e)
         {
             SupplierDetails SupD = new SupplierDetails();
-            SupD.Show();
+            SupD.ShowDialog();
         }
 
         private void btn_SetUserPass_Click(object sender, EventArgs e)
         {
             login log = new login();
-            log.Show();
+            log.ShowDialog();
         }
 
         private void btn_Calculato_Click(object sender, EventArgs e)
@@ -164,7 +164,7 @@ namespace BillingApp
         public static string Contact,Client_Name,Client_ID1,Address,Email;
         private void btn_Submit_Click(object sender, EventArgs e)
         {
-            string Datadetail;
+          
             COM.Open();
             SqlCommand cmd = new SqlCommand("SP_Client_Details", COM);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -186,7 +186,7 @@ namespace BillingApp
             }
             else
             {
-                MessageBox.Show("Username not Found", "Warning!");
+                MessageBox.Show("Client Details not Found", "Warning!");
             }
            // Sale_Invoice data = new Sale_Invoice();
            // data.ShowDialog();

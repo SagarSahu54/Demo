@@ -1,4 +1,5 @@
-﻿namespace BillingApp
+﻿
+namespace BillingApp
 {
     partial class loginForm
     {
@@ -28,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.Mlab_Login_Form = new MetroFramework.Controls.MetroLabel();
             this.MTex_Password = new MetroFramework.Controls.MetroTextBox();
@@ -41,6 +43,7 @@
             // 
             // metroPanel1
             // 
+            this.metroPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroPanel1.BackgroundImage")));
             this.metroPanel1.Controls.Add(this.Mlab_Login_Form);
             this.metroPanel1.Controls.Add(this.MTex_Password);
             this.metroPanel1.Controls.Add(this.MTex_Username);
@@ -62,9 +65,11 @@
             // Mlab_Login_Form
             // 
             this.Mlab_Login_Form.AutoSize = true;
+            this.Mlab_Login_Form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Mlab_Login_Form.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Mlab_Login_Form.Location = new System.Drawing.Point(216, 56);
             this.Mlab_Login_Form.Name = "Mlab_Login_Form";
-            this.Mlab_Login_Form.Size = new System.Drawing.Size(77, 19);
+            this.Mlab_Login_Form.Size = new System.Drawing.Size(98, 25);
             this.Mlab_Login_Form.TabIndex = 6;
             this.Mlab_Login_Form.Text = "Login Form";
             this.Mlab_Login_Form.UseCustomBackColor = true;
@@ -152,9 +157,11 @@
             // Password
             // 
             this.Password.AutoSize = true;
+            this.Password.BackColor = System.Drawing.Color.Yellow;
+            this.Password.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Password.Location = new System.Drawing.Point(30, 157);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(63, 19);
+            this.Password.Size = new System.Drawing.Size(82, 25);
             this.Password.TabIndex = 2;
             this.Password.Text = "Password";
             this.Password.UseCustomBackColor = true;
@@ -165,9 +172,11 @@
             // Username
             // 
             this.Username.AutoSize = true;
+            this.Username.BackColor = System.Drawing.Color.Yellow;
+            this.Username.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Username.Location = new System.Drawing.Point(30, 100);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(68, 19);
+            this.Username.Size = new System.Drawing.Size(89, 25);
             this.Username.TabIndex = 1;
             this.Username.Text = "Username";
             this.Username.UseCustomBackColor = true;
@@ -179,7 +188,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 450);
+            this.splitter1.Size = new System.Drawing.Size(3, 419);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
@@ -188,9 +197,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 419);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.metroPanel1);
+            this.DoubleBuffered = true;
             this.Name = "loginForm";
             this.Text = "loginForm";
             this.Load += new System.EventHandler(this.loginForm_Load);

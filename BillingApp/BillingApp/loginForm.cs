@@ -58,6 +58,7 @@ namespace BillingApp
         public void loginAction()
         {
             try
+            
             {
                 COM.Open();
                 SqlCommand cmd = new SqlCommand("SP_Login_details", COM);
@@ -71,8 +72,8 @@ namespace BillingApp
                 int DTCount = dt.Rows.Count;
                 if(DTCount > 0)
                 {
-                    int ID = Convert.ToInt32(dt.Rows[0]["User_ID"].ToString());
-                    string Pass = dt.Rows[0]["Password"].ToString();
+                   // int ID = Convert.ToInt32(dt.Rows[0]["User_ID"].ToString());
+                    string Email = dt.Rows[0]["Email"].ToString();
                     FrmDashBoard frm = new FrmDashBoard();
                     frm.ShowDialog();
                 }
@@ -84,7 +85,7 @@ namespace BillingApp
             catch (Exception ex)
             {
 
-
+                MessageBox.Show("Incorrect USername and Password", "Error");
 
             }
             finally

@@ -1,16 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="BillingApp\Browser.cs">
+    <Compile Update="BillingApp\bin\Debug\Client_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\bin\Debug\Report_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Client_Details.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="BillingApp\FrmDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BillingApp\frm_Report_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Frm_SearchInvoice .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\InvoiceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\LoginData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\ProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Purchase_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Report_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Sale_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BillingApp\SupplierDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MY Software\couple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MY Software\DashBoards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MY Software\DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MY Software\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MY Software\Reference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MY Software\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WindowsFormsApp1\Form1.cs">
