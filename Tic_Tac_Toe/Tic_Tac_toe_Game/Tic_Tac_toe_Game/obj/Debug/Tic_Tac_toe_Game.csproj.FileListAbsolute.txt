@@ -1,0 +1,11 @@
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\bin\Debug\Tic_Tac_toe_Game.exe.config
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\bin\Debug\Tic_Tac_toe_Game.exe
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\bin\Debug\Tic_Tac_toe_Game.pdb
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.Form1.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.exe
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.pdb
+C:\Users\ADMIN\Documents\Project first\WindowsForms Projectfirst\Tic_Tac_Toe\Tic_Tac_toe_Game\Tic_Tac_toe_Game\obj\Debug\Tic_Tac_toe_Game.SnakeGame2.resources
