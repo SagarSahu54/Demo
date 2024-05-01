@@ -131,6 +131,7 @@
             this.text_Contact.Size = new System.Drawing.Size(213, 22);
             this.text_Contact.TabIndex = 5;
             this.text_Contact.UseWaitCursor = true;
+            this.text_Contact.TextChanged += new System.EventHandler(this.text_Contact_TextChanged_1);
             // 
             // text_Email
             // 
@@ -167,6 +168,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(643, 349);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellBorderStyleChanged += new System.EventHandler(this.dataGridView1_CellBorderStyleChanged);
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -335,6 +337,7 @@
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel2_Paint);
             // 
             // metroPanel3
             // 

@@ -23,7 +23,7 @@ namespace BillingApp
         private void SP_ProductData()
         {
             COM.Open();
-            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Action","SelectAll");
             DataTable Dt = new DataTable();
@@ -212,9 +212,9 @@ namespace BillingApp
 
             }
         }
-    
-       
-        
+
+
+
         public void Refresh()
         {
             COM.Open();

@@ -105,7 +105,7 @@ namespace BillingApp
           try
             {
                 COM.Open();
-                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Action", "SelectAll");
                 DataTable Dt = new DataTable();
@@ -136,7 +136,7 @@ namespace BillingApp
                 int ProID =Convert.ToInt32(MCom_ProductName.SelectedValue.ToString());
 
                 COM.Open();
-                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Action","ProPrice");
                 cmd.Parameters.AddWithValue("@Product_ID",ProID);
@@ -189,7 +189,7 @@ namespace BillingApp
             try
             {
                 COM.Open();
-                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Action", "ProPrice");
                 cmd.Parameters.AddWithValue("@Product_ID", ProID);
@@ -237,10 +237,11 @@ namespace BillingApp
                     {
 
                         MessageBox.Show("Products  Already Exist ", "Show");
+                       // addproduct();
                         return;
 
                         //findproduct();
-
+                      
 
                     }
                 }
@@ -271,7 +272,7 @@ namespace BillingApp
         public void selectAll()
         {
             COM.Open();
-            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Action", "SelectAll");
             /**SqlCommand cmd = new SqlCommand("Select * From Client_Details", COM);*/
@@ -298,10 +299,20 @@ namespace BillingApp
             }
             MTex_GrandTotal.Text = total.ToString();
         }
-        public void findproduct()
+     //   public void addproduct()
+     //   {
+     //       int Rowcount = metroGrid1.Rows.Count;
+     //
+     //       for (int i = 0; i < Rowcount; i++)
+     //       {
+     //           metroGrid1.Rows.Add(metroGrid1.Rows[i].Cells[1].Value.ToString() +  MCom_ProductName.Text);
+     //       }
+     //
+     //       }
+       public void findproduct()
         {
             COM.Open();
-            SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+            SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Action", "findProducts");
             cmd.Parameters.AddWithValue("@Product_Name", MCom_ProductName);
@@ -355,7 +366,7 @@ namespace BillingApp
             try
             {
                 COM.Open();
-                SqlCommand cmd = new SqlCommand("SP_Product_Details", COM);
+                SqlCommand cmd = new SqlCommand("SP_Product_Master", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Action", "Total");
                 // cmd.Parameters.AddWithValue("@Product_ID", ProID);
@@ -480,9 +491,20 @@ namespace BillingApp
             COM.Close();
         }
 
-      
+        private void Rtex_Message_TextChanged(object sender, EventArgs e)
+        {
 
+        }
 
+        private void MTex_GrandTotal_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

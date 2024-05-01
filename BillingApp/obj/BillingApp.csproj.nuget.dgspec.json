@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\Project first\\WindowsForms Projectfirst\\BillingApp\\BillingApp.csproj": {}
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Demo\\BillingApp\\BillingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\Project first\\WindowsForms Projectfirst\\BillingApp\\BillingApp.csproj": {
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Demo\\BillingApp\\BillingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\Project first\\WindowsForms Projectfirst\\BillingApp\\BillingApp.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Demo\\BillingApp\\BillingApp.csproj",
         "projectName": "BillingApp",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\Project first\\WindowsForms Projectfirst\\BillingApp\\BillingApp.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Demo\\BillingApp\\BillingApp.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\Project first\\WindowsForms Projectfirst\\BillingApp\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Demo\\BillingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

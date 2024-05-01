@@ -28,115 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.text_MRP = new System.Windows.Forms.TextBox();
-            this.text_Name = new System.Windows.Forms.TextBox();
-            this.text_Quantity = new System.Windows.Forms.TextBox();
-            this.text_Selling = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Submit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.Label();
-            this.text_ID = new System.Windows.Forms.TextBox();
-            this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Dashboard = new System.Windows.Forms.Button();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.MBtn_Stock = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.text_Name = new System.Windows.Forms.TextBox();
+            this.text_MRP = new System.Windows.Forms.TextBox();
+            this.text_Selling = new System.Windows.Forms.TextBox();
+            this.text_Quantity = new System.Windows.Forms.TextBox();
+            this.btn_Submit = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
+            this.text_ID = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.MBtn_Stock = new System.Windows.Forms.Button();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Cyan;
-            this.label1.Location = new System.Drawing.Point(5, 116);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(7, 211);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Quantity";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Cyan;
-            this.label3.Location = new System.Drawing.Point(5, 144);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Selling";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(7, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "MRP";
-            // 
-            // text_MRP
-            // 
-            this.text_MRP.Location = new System.Drawing.Point(87, 174);
-            this.text_MRP.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.text_MRP.Name = "text_MRP";
-            this.text_MRP.Size = new System.Drawing.Size(189, 24);
-            this.text_MRP.TabIndex = 4;
-            // 
-            // text_Name
-            // 
-            this.text_Name.Location = new System.Drawing.Point(87, 116);
-            this.text_Name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.text_Name.Name = "text_Name";
-            this.text_Name.Size = new System.Drawing.Size(189, 24);
-            this.text_Name.TabIndex = 5;
-            // 
-            // text_Quantity
-            // 
-            this.text_Quantity.Location = new System.Drawing.Point(87, 211);
-            this.text_Quantity.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.text_Quantity.Name = "text_Quantity";
-            this.text_Quantity.Size = new System.Drawing.Size(189, 24);
-            this.text_Quantity.TabIndex = 6;
-            // 
-            // text_Selling
-            // 
-            this.text_Selling.Location = new System.Drawing.Point(87, 144);
-            this.text_Selling.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.text_Selling.Name = "text_Selling";
-            this.text_Selling.Size = new System.Drawing.Size(189, 24);
-            this.text_Selling.TabIndex = 7;
-            this.text_Selling.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // dataGridView1
             // 
@@ -192,17 +113,6 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
-            // btn_Submit
-            // 
-            this.btn_Submit.BackColor = System.Drawing.Color.Lime;
-            this.btn_Submit.Location = new System.Drawing.Point(346, 180);
-            this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.Size = new System.Drawing.Size(117, 35);
-            this.btn_Submit.TabIndex = 9;
-            this.btn_Submit.Text = "Submit";
-            this.btn_Submit.UseVisualStyleBackColor = false;
-            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -217,26 +127,136 @@
             this.label5.Text = "Product Details";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // ID
+            // btn_Dashboard
             // 
-            this.ID.AutoSize = true;
-            this.ID.BackColor = System.Drawing.Color.Cyan;
-            this.ID.Location = new System.Drawing.Point(5, 60);
-            this.ID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(22, 22);
-            this.ID.TabIndex = 14;
-            this.ID.Text = "ID";
-            this.ID.UseCompatibleTextRendering = true;
+            this.btn_Dashboard.BackColor = System.Drawing.Color.Blue;
+            this.btn_Dashboard.Location = new System.Drawing.Point(575, 182);
+            this.btn_Dashboard.Name = "btn_Dashboard";
+            this.btn_Dashboard.Size = new System.Drawing.Size(143, 34);
+            this.btn_Dashboard.TabIndex = 17;
+            this.btn_Dashboard.Text = "Dashboard";
+            this.btn_Dashboard.UseVisualStyleBackColor = false;
+            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click_1);
             // 
-            // text_ID
+            // metroPanel2
             // 
-            this.text_ID.Location = new System.Drawing.Point(75, 60);
-            this.text_ID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.text_ID.Name = "text_ID";
-            this.text_ID.Size = new System.Drawing.Size(174, 24);
-            this.text_ID.TabIndex = 13;
-            this.text_ID.TextChanged += new System.EventHandler(this.text_ID_TextChanged);
+            this.metroPanel2.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.metroPanel2.Controls.Add(this.btn_Dashboard);
+            this.metroPanel2.Controls.Add(this.dataGridView1);
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(53, 355);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(719, 219);
+            this.metroPanel2.TabIndex = 19;
+            this.metroPanel2.UseCustomBackColor = true;
+            this.metroPanel2.UseCustomForeColor = true;
+            this.metroPanel2.UseStyleColors = true;
+            this.metroPanel2.VerticalScrollbar = true;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel2_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Yellow;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(12, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(817, 36);
+            this.panel1.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Cyan;
+            this.label1.Location = new System.Drawing.Point(5, 116);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Cyan;
+            this.label2.Location = new System.Drawing.Point(7, 211);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Quantity";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Cyan;
+            this.label3.Location = new System.Drawing.Point(5, 144);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Selling";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Cyan;
+            this.label4.Location = new System.Drawing.Point(7, 180);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 18);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "MRP";
+            // 
+            // text_Name
+            // 
+            this.text_Name.Location = new System.Drawing.Point(87, 116);
+            this.text_Name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.text_Name.Name = "text_Name";
+            this.text_Name.Size = new System.Drawing.Size(189, 24);
+            this.text_Name.TabIndex = 5;
+            // 
+            // text_MRP
+            // 
+            this.text_MRP.Location = new System.Drawing.Point(87, 174);
+            this.text_MRP.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.text_MRP.Name = "text_MRP";
+            this.text_MRP.Size = new System.Drawing.Size(189, 24);
+            this.text_MRP.TabIndex = 4;
+            // 
+            // text_Selling
+            // 
+            this.text_Selling.Location = new System.Drawing.Point(87, 144);
+            this.text_Selling.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.text_Selling.Name = "text_Selling";
+            this.text_Selling.Size = new System.Drawing.Size(189, 24);
+            this.text_Selling.TabIndex = 7;
+            this.text_Selling.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // text_Quantity
+            // 
+            this.text_Quantity.Location = new System.Drawing.Point(87, 211);
+            this.text_Quantity.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.text_Quantity.Name = "text_Quantity";
+            this.text_Quantity.Size = new System.Drawing.Size(189, 24);
+            this.text_Quantity.TabIndex = 6;
+            // 
+            // btn_Submit
+            // 
+            this.btn_Submit.BackColor = System.Drawing.Color.Lime;
+            this.btn_Submit.Location = new System.Drawing.Point(346, 180);
+            this.btn_Submit.Name = "btn_Submit";
+            this.btn_Submit.Size = new System.Drawing.Size(117, 35);
+            this.btn_Submit.TabIndex = 9;
+            this.btn_Submit.Text = "Submit";
+            this.btn_Submit.UseVisualStyleBackColor = false;
+            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // btn_Delete
             // 
@@ -250,16 +270,44 @@
             this.btn_Delete.Visible = false;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // btn_Dashboard
+            // text_ID
             // 
-            this.btn_Dashboard.BackColor = System.Drawing.Color.Blue;
-            this.btn_Dashboard.Location = new System.Drawing.Point(575, 182);
-            this.btn_Dashboard.Name = "btn_Dashboard";
-            this.btn_Dashboard.Size = new System.Drawing.Size(143, 34);
-            this.btn_Dashboard.TabIndex = 17;
-            this.btn_Dashboard.Text = "Dashboard";
-            this.btn_Dashboard.UseVisualStyleBackColor = false;
-            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click_1);
+            this.text_ID.Location = new System.Drawing.Point(75, 60);
+            this.text_ID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.text_ID.Name = "text_ID";
+            this.text_ID.Size = new System.Drawing.Size(174, 24);
+            this.text_ID.TabIndex = 13;
+            this.text_ID.TextChanged += new System.EventHandler(this.text_ID_TextChanged);
+            // 
+            // ID
+            // 
+            this.ID.AutoSize = true;
+            this.ID.BackColor = System.Drawing.Color.Cyan;
+            this.ID.Location = new System.Drawing.Point(5, 60);
+            this.ID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(22, 22);
+            this.ID.TabIndex = 14;
+            this.ID.Text = "ID";
+            this.ID.UseCompatibleTextRendering = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(485, 18);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // MBtn_Stock
+            // 
+            this.MBtn_Stock.ForeColor = System.Drawing.Color.Lime;
+            this.MBtn_Stock.Location = new System.Drawing.Point(346, 221);
+            this.MBtn_Stock.Name = "MBtn_Stock";
+            this.MBtn_Stock.Size = new System.Drawing.Size(223, 23);
+            this.MBtn_Stock.TabIndex = 18;
+            this.MBtn_Stock.Text = "Product Stock Print";
+            this.MBtn_Stock.UseVisualStyleBackColor = true;
+            this.MBtn_Stock.Click += new System.EventHandler(this.MBtn_Stock_Click);
             // 
             // metroPanel1
             // 
@@ -293,54 +341,6 @@
             this.metroPanel1.VerticalScrollbarSize = 10;
             this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
             // 
-            // MBtn_Stock
-            // 
-            this.MBtn_Stock.ForeColor = System.Drawing.Color.Lime;
-            this.MBtn_Stock.Location = new System.Drawing.Point(346, 221);
-            this.MBtn_Stock.Name = "MBtn_Stock";
-            this.MBtn_Stock.Size = new System.Drawing.Size(223, 23);
-            this.MBtn_Stock.TabIndex = 18;
-            this.MBtn_Stock.Text = "Product Stock Print";
-            this.MBtn_Stock.UseVisualStyleBackColor = true;
-            this.MBtn_Stock.Click += new System.EventHandler(this.MBtn_Stock_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(485, 18);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 24);
-            this.dateTimePicker1.TabIndex = 17;
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.metroPanel2.Controls.Add(this.btn_Dashboard);
-            this.metroPanel2.Controls.Add(this.dataGridView1);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(53, 355);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(719, 219);
-            this.metroPanel2.TabIndex = 19;
-            this.metroPanel2.UseCustomBackColor = true;
-            this.metroPanel2.UseCustomForeColor = true;
-            this.metroPanel2.UseStyleColors = true;
-            this.metroPanel2.VerticalScrollbar = true;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            this.metroPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel2_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Yellow;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(12, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(817, 36);
-            this.panel1.TabIndex = 20;
-            // 
             // ProductDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -355,41 +355,40 @@
             this.Text = "ProductDetails";
             this.Load += new System.EventHandler(this.ProductDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox text_MRP;
-        private System.Windows.Forms.TextBox text_Name;
-        private System.Windows.Forms.TextBox text_Quantity;
-        private System.Windows.Forms.TextBox text_Selling;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.TextBox text_ID;
-        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Dashboard;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox text_Name;
+        private System.Windows.Forms.TextBox text_MRP;
+        private System.Windows.Forms.TextBox text_Selling;
+        private System.Windows.Forms.TextBox text_Quantity;
+        private System.Windows.Forms.Button btn_Submit;
+        private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.TextBox text_ID;
+        private System.Windows.Forms.Label ID;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button MBtn_Stock;
-        private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }

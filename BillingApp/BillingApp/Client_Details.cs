@@ -190,7 +190,7 @@ namespace BillingApp
                 SqlCommand cmd = new SqlCommand("SP_Client_Details", COM);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Action", "FindContact");
-                cmd.Parameters.AddWithValue("@Contact", text_Contact.Text);
+                cmd.Parameters.AddWithValue("@Contact",text_Contact.Text);
                 DataTable Dt = new DataTable();
                 Dt.Load(cmd.ExecuteReader());
                 COM.Close();
@@ -200,13 +200,14 @@ namespace BillingApp
                 {
                 MessageBox.Show(" Contact Details Already Exist ", "Show");
 
-                MessageBox.Show("That is New Data", "Show");
-                Submit();
-            }
+                }
                 else
                 {
                 //MessageBox.Show("That is New Data", "Show");
-                MessageBox.Show(" Contact Details Already Exist ", "Show");
+
+                MessageBox.Show("That is New Data", "Show");
+                Submit();
+                
              
                 } 
         }
@@ -486,6 +487,21 @@ namespace BillingApp
          {
              A = ((dataGridView1.DataSource as DataTable).DefaultView.RowFilter = String.Format("Contact LIKE '%{0}%'", text_Contact.Text));
          }
+
+        private void text_Contact_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellBorderStyleChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

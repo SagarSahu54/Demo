@@ -162,6 +162,12 @@ namespace BillingApp
             
         }
         public static string Contact,Client_Name,Client_ID1,Address,Email;
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_Submit_Click(object sender, EventArgs e)
         {
           

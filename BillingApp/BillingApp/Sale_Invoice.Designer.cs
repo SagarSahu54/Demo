@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MTex_ClientID = new MetroFramework.Controls.MetroTextBox();
             this.MLab_ClientID = new MetroFramework.Controls.MetroLabel();
             this.MTex_Email = new MetroFramework.Controls.MetroTextBox();
@@ -80,9 +80,11 @@
             this.Rtex_Message = new System.Windows.Forms.RichTextBox();
             this.tex_Note = new MetroFramework.Controls.MetroLabel();
             this.MBtn_AddItem = new MetroFramework.Controls.MetroButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MTex_ClientID
@@ -344,7 +346,7 @@
             // 
             this.MCom_ProductName.FormattingEnabled = true;
             this.MCom_ProductName.ItemHeight = 23;
-            this.MCom_ProductName.Location = new System.Drawing.Point(153, 316);
+            this.MCom_ProductName.Location = new System.Drawing.Point(121, 88);
             this.MCom_ProductName.Name = "MCom_ProductName";
             this.MCom_ProductName.Size = new System.Drawing.Size(199, 29);
             this.MCom_ProductName.TabIndex = 2;
@@ -369,7 +371,7 @@
             this.MTex_Price.CustomButton.UseSelectable = true;
             this.MTex_Price.CustomButton.Visible = false;
             this.MTex_Price.Lines = new string[0];
-            this.MTex_Price.Location = new System.Drawing.Point(396, 316);
+            this.MTex_Price.Location = new System.Drawing.Point(364, 88);
             this.MTex_Price.MaxLength = 32767;
             this.MTex_Price.Name = "MTex_Price";
             this.MTex_Price.PasswordChar = '\0';
@@ -399,7 +401,7 @@
             this.MTex_Quantity.CustomButton.UseSelectable = true;
             this.MTex_Quantity.CustomButton.Visible = false;
             this.MTex_Quantity.Lines = new string[0];
-            this.MTex_Quantity.Location = new System.Drawing.Point(509, 316);
+            this.MTex_Quantity.Location = new System.Drawing.Point(477, 88);
             this.MTex_Quantity.MaxLength = 32767;
             this.MTex_Quantity.Name = "MTex_Quantity";
             this.MTex_Quantity.PasswordChar = '\0';
@@ -443,12 +445,13 @@
             this.MTex_GrandTotal.UseSelectable = true;
             this.MTex_GrandTotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.MTex_GrandTotal.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.MTex_GrandTotal.Click += new System.EventHandler(this.MTex_GrandTotal_Click_1);
             // 
             // Mlab_ProductName
             // 
             this.Mlab_ProductName.AutoSize = true;
             this.Mlab_ProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Mlab_ProductName.Location = new System.Drawing.Point(153, 294);
+            this.Mlab_ProductName.Location = new System.Drawing.Point(121, 66);
             this.Mlab_ProductName.Name = "Mlab_ProductName";
             this.Mlab_ProductName.Size = new System.Drawing.Size(95, 19);
             this.Mlab_ProductName.TabIndex = 16;
@@ -461,7 +464,7 @@
             // 
             this.MLab_Price.AutoSize = true;
             this.MLab_Price.BackColor = System.Drawing.Color.Lime;
-            this.MLab_Price.Location = new System.Drawing.Point(396, 294);
+            this.MLab_Price.Location = new System.Drawing.Point(364, 66);
             this.MLab_Price.Name = "MLab_Price";
             this.MLab_Price.Size = new System.Drawing.Size(38, 19);
             this.MLab_Price.TabIndex = 17;
@@ -474,7 +477,7 @@
             // 
             this.Mlab_Quantity.AutoSize = true;
             this.Mlab_Quantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Mlab_Quantity.Location = new System.Drawing.Point(509, 294);
+            this.Mlab_Quantity.Location = new System.Drawing.Point(477, 66);
             this.Mlab_Quantity.Name = "Mlab_Quantity";
             this.Mlab_Quantity.Size = new System.Drawing.Size(58, 19);
             this.Mlab_Quantity.TabIndex = 18;
@@ -505,14 +508,14 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -520,14 +523,14 @@
             this.Column3,
             this.Column4,
             this.Column2});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle14;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.Lime;
@@ -535,14 +538,14 @@
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.ReadOnly = true;
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(546, 150);
@@ -587,6 +590,7 @@
             this.metroLabel3.Size = new System.Drawing.Size(76, 19);
             this.metroLabel3.TabIndex = 21;
             this.metroLabel3.Text = "Grand Total";
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // MTex_ProductID
             // 
@@ -603,7 +607,7 @@
             this.MTex_ProductID.CustomButton.UseSelectable = true;
             this.MTex_ProductID.CustomButton.Visible = false;
             this.MTex_ProductID.Lines = new string[0];
-            this.MTex_ProductID.Location = new System.Drawing.Point(49, 316);
+            this.MTex_ProductID.Location = new System.Drawing.Point(17, 88);
             this.MTex_ProductID.MaxLength = 32767;
             this.MTex_ProductID.Name = "MTex_ProductID";
             this.MTex_ProductID.PasswordChar = '\0';
@@ -622,7 +626,7 @@
             // 
             this.MLab_ProductID.AutoSize = true;
             this.MLab_ProductID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.MLab_ProductID.Location = new System.Drawing.Point(50, 294);
+            this.MLab_ProductID.Location = new System.Drawing.Point(18, 66);
             this.MLab_ProductID.Name = "MLab_ProductID";
             this.MLab_ProductID.Size = new System.Drawing.Size(71, 19);
             this.MLab_ProductID.TabIndex = 24;
@@ -646,7 +650,7 @@
             this.MTex_Total.CustomButton.UseSelectable = true;
             this.MTex_Total.CustomButton.Visible = false;
             this.MTex_Total.Lines = new string[0];
-            this.MTex_Total.Location = new System.Drawing.Point(637, 327);
+            this.MTex_Total.Location = new System.Drawing.Point(596, 99);
             this.MTex_Total.MaxLength = 32767;
             this.MTex_Total.Name = "MTex_Total";
             this.MTex_Total.PasswordChar = '\0';
@@ -665,7 +669,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(620, 316);
+            this.metroButton1.Location = new System.Drawing.Point(588, 88);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(113, 39);
             this.metroButton1.TabIndex = 23;
@@ -700,7 +704,7 @@
             this.MTex_AvailableStock.CustomButton.UseSelectable = true;
             this.MTex_AvailableStock.CustomButton.Visible = false;
             this.MTex_AvailableStock.Lines = new string[0];
-            this.MTex_AvailableStock.Location = new System.Drawing.Point(620, 251);
+            this.MTex_AvailableStock.Location = new System.Drawing.Point(588, 23);
             this.MTex_AvailableStock.MaxLength = 32767;
             this.MTex_AvailableStock.Name = "MTex_AvailableStock";
             this.MTex_AvailableStock.PasswordChar = '\0';
@@ -719,7 +723,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.metroLabel4.Location = new System.Drawing.Point(509, 260);
+            this.metroLabel4.Location = new System.Drawing.Point(477, 32);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(97, 19);
             this.metroLabel4.TabIndex = 28;
@@ -927,6 +931,7 @@
             this.Rtex_Message.Size = new System.Drawing.Size(244, 49);
             this.Rtex_Message.TabIndex = 30;
             this.Rtex_Message.Text = "";
+            this.Rtex_Message.TextChanged += new System.EventHandler(this.Rtex_Message_TextChanged);
             // 
             // tex_Note
             // 
@@ -943,7 +948,7 @@
             // 
             // MBtn_AddItem
             // 
-            this.MBtn_AddItem.Location = new System.Drawing.Point(620, 316);
+            this.MBtn_AddItem.Location = new System.Drawing.Point(588, 88);
             this.MBtn_AddItem.Name = "MBtn_AddItem";
             this.MBtn_AddItem.Size = new System.Drawing.Size(113, 39);
             this.MBtn_AddItem.TabIndex = 23;
@@ -951,33 +956,41 @@
             this.MBtn_AddItem.UseSelectable = true;
             this.MBtn_AddItem.Click += new System.EventHandler(this.MBtn_AddItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.metroLabel4);
+            this.panel1.Controls.Add(this.MTex_AvailableStock);
+            this.panel1.Controls.Add(this.MTex_Total);
+            this.panel1.Controls.Add(this.MLab_ProductID);
+            this.panel1.Controls.Add(this.metroButton1);
+            this.panel1.Controls.Add(this.MBtn_AddItem);
+            this.panel1.Controls.Add(this.MTex_ProductID);
+            this.panel1.Controls.Add(this.Mlab_ProductName);
+            this.panel1.Controls.Add(this.MLab_Price);
+            this.panel1.Controls.Add(this.Mlab_Quantity);
+            this.panel1.Controls.Add(this.MTex_Price);
+            this.panel1.Controls.Add(this.MTex_Quantity);
+            this.panel1.Controls.Add(this.MCom_ProductName);
+            this.panel1.Location = new System.Drawing.Point(32, 228);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(813, 141);
+            this.panel1.TabIndex = 32;
+            // 
             // Sale_Invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1138, 749);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tex_Note);
             this.Controls.Add(this.Rtex_Message);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.MTex_AvailableStock);
             this.Controls.Add(this.btn_GenerateInvoice);
-            this.Controls.Add(this.MTex_Total);
-            this.Controls.Add(this.MLab_ProductID);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.MBtn_AddItem);
-            this.Controls.Add(this.MTex_ProductID);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.Mlab_ProductName);
-            this.Controls.Add(this.MLab_Price);
-            this.Controls.Add(this.Mlab_Quantity);
             this.Controls.Add(this.Mlab_Product_Card);
-            this.Controls.Add(this.MTex_Price);
-            this.Controls.Add(this.MTex_Quantity);
             this.Controls.Add(this.MTex_GrandTotal);
-            this.Controls.Add(this.MCom_ProductName);
             this.Name = "Sale_Invoice";
             this.Text = " Sell_Invoice";
             this.Load += new System.EventHandler(this.ClientInvoice_Load);
@@ -986,6 +999,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1042,5 +1057,6 @@
         private System.Windows.Forms.RichTextBox Rtex_Message;
         private MetroFramework.Controls.MetroLabel tex_Note;
         private MetroFramework.Controls.MetroButton MBtn_AddItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }

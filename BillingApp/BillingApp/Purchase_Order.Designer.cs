@@ -42,12 +42,12 @@
             this.Mlab_Address = new MetroFramework.Controls.MetroLabel();
             this.MLab_Contact = new MetroFramework.Controls.MetroLabel();
             this.MLab_Email = new MetroFramework.Controls.MetroLabel();
-            this.MLab_CustomerName = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.MTex_InvoiceDate = new MetroFramework.Controls.MetroTextBox();
             this.MTex_InvoiceNo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.MLab_CustomerName = new MetroFramework.Controls.MetroLabel();
             this.MTex_ProductID = new MetroFramework.Controls.MetroTextBox();
             this.MCom_ProductName = new MetroFramework.Controls.MetroComboBox();
             this.MTex_Price = new MetroFramework.Controls.MetroTextBox();
@@ -107,6 +107,7 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
             // 
             // MTex_Address
             // 
@@ -301,20 +302,6 @@
             this.MLab_Email.UseCustomBackColor = true;
             this.MLab_Email.UseCustomForeColor = true;
             // 
-            // MLab_CustomerName
-            // 
-            this.MLab_CustomerName.AutoSize = true;
-            this.MLab_CustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.MLab_CustomerName.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.MLab_CustomerName.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.MLab_CustomerName.Location = new System.Drawing.Point(367, 0);
-            this.MLab_CustomerName.Name = "MLab_CustomerName";
-            this.MLab_CustomerName.Size = new System.Drawing.Size(140, 25);
-            this.MLab_CustomerName.TabIndex = 5;
-            this.MLab_CustomerName.Text = "Purchase order";
-            this.MLab_CustomerName.UseCustomBackColor = true;
-            this.MLab_CustomerName.UseCustomForeColor = true;
-            // 
             // metroPanel2
             // 
             this.metroPanel2.BackColor = System.Drawing.Color.White;
@@ -418,6 +405,20 @@
             this.metroLabel1.Text = "InvoiceNumber";
             this.metroLabel1.UseCustomBackColor = true;
             this.metroLabel1.UseCustomForeColor = true;
+            // 
+            // MLab_CustomerName
+            // 
+            this.MLab_CustomerName.AutoSize = true;
+            this.MLab_CustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.MLab_CustomerName.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.MLab_CustomerName.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.MLab_CustomerName.Location = new System.Drawing.Point(367, 0);
+            this.MLab_CustomerName.Name = "MLab_CustomerName";
+            this.MLab_CustomerName.Size = new System.Drawing.Size(140, 25);
+            this.MLab_CustomerName.TabIndex = 5;
+            this.MLab_CustomerName.Text = "Purchase order";
+            this.MLab_CustomerName.UseCustomBackColor = true;
+            this.MLab_CustomerName.UseCustomForeColor = true;
             // 
             // MTex_ProductID
             // 
@@ -752,6 +753,7 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(644, 150);
             this.metroGrid1.TabIndex = 37;
+            this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             // 
             // Column5
             // 
@@ -900,7 +902,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(892, 697);
+            this.ClientSize = new System.Drawing.Size(921, 697);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.btn_GenerateInvoice);
